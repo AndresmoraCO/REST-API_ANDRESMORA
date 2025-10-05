@@ -1,0 +1,172 @@
+/* import fonts from googleips */
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    margin: 0;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+:root{
+    --primary-gradient: linear-gradient(to bottom,#fff, #adadaa);
+    --label-gradient: linear-gradient(to bottom, #536452 0%, #57dd52 40%, #95e669 100%)
+}
+
+.container{
+    background: #282c34;
+    background: url(../img/b9e4007010941cadd8ff11843af4f363.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 92vw;
+    height: 89vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    font-family: "Mulish", sans-serif;
+}
+
+.navbar .nav-itmes{
+    text-align: right;
+}
+
+.navbar .navbar-brand h5{
+    padding: .4rem 2rem;
+    margin: 0;
+}
+
+.nav-itmes .navbar-nav{
+    list-style-type: none;
+}
+
+.navbar-nav .nav-link{
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.9rem;
+}
+
+.navbar-nav .sign-in{
+    border: none;
+    padding: .4rem 2rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    background: #ee5 ;
+    font-family: "Mulish", sans-serif;
+}
+
+
+/* Styling Checkbox */
+
+.lightswitch{
+    width: 40px;
+    height: 7px;
+    background: rgb(192, 188, 188);
+    margin: 20px auto;
+    border-radius: 100px;
+    position: relative;
+}
+
+.lightswitch label{
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: #0f0c29;
+    background: var(--label-gradient);
+    border-radius: 50px;
+    position: absolute;
+    top: -6px;
+    left: -1px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: all .5s ease;
+}
+
+.lightswitch input[type="checkbox"]{
+    position: absolute;
+    left: -8px;
+    top: -6px;
+    width: 50px;
+    opacity: 0;
+}
+
+.lightswitch input[type="checkbox"]:checked + label{
+    left: 25px;
+    background: tomato;
+}
+
+.container h4{
+  font-size: 11rem;
+  margin: 0 .4rem;
+  padding: 0 1rem;
+  margin-top: 2rem;
+  font-family:  "Mulish", sans-serif;
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* weather forecast */
+.weather-box {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 400px;
+  background: #1a2a40; 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #fff; 
+}
+
+.weather-box h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #f1f1f1;
+}
+
+.weather-box select, 
+.weather-box button {
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.weather-box select {
+  background: #fff;
+  color: #1a2a40;
+}
+
+.weather-box button {
+  background-color: #007BFF; 
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.weather-box button:hover {
+  background-color: #0056b3;
+}
+
+.weather-box .result {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.1); 
+  border-radius: 8px;
+  color: #fff;
+}
+
+.weather-box img {
+  margin-top: 0.5rem;
+  width: 60px;
+  height: 60px;
+}

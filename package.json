@@ -1,0 +1,23 @@
+{
+  "name": "rest-api_andresmora",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server --baseDir=Public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresmoraCO/REST-API_ANDRESMORA.git"
+  },
+  "keywords": [],
+  "author": "Andres Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresmoraCO/REST-API_ANDRESMORA/issues"
+  },
+  "homepage": "https://github.com/AndresmoraCO/REST-API_ANDRESMORA#readme",
+  "description": "",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
